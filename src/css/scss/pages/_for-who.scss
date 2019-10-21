@@ -1,0 +1,36 @@
+.for-who {
+	&__row-1 {
+		align-items: flex-start;
+	}
+
+	&__row-2 {
+		margin-top: 2rem;
+		text-align: center;
+	}
+
+	&__column-1 {
+		background: url(../img/background/light.png);				
+	}
+
+	&__column-2 {
+		background-color: $dark-gray;		
+	}
+
+	&__column-4 {
+		margin: 1.25rem 0 0;
+		font-size: 3.8125rem;		
+	}	
+
+	.list {
+		font-size: $text-s;
+	}
+
+	&__text-1 {
+		font-style: italic;
+		text-transform: uppercase;
+	}
+
+	&__text-2 {
+		font-weight: 700;
+	}	
+}

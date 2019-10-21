@@ -1,0 +1,26 @@
+.download {
+	text-transform: uppercase;
+
+	.row {
+		align-items: flex-end;
+	}
+
+	&__wrapper {
+		margin: .625rem 0;    
+		background-color: $dark-gray;		
+	}
+
+	&__text {
+		font-size: 1.15rem;
+	}
+
+	&__column-1 {
+		border: 10px solid $yellow;		
+	}	
+
+	&__column-2 {
+		border: 10px solid $light-gray;
+		background-color: $white;
+		text-align: center;			
+	}	
+}

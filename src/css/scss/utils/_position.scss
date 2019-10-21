@@ -1,0 +1,9 @@
+.for-who .for-who__column-2, .download .download__column-2, .footer .footer__column-2 {	
+	top: 0;
+	left: 0;
+
+	@media (min-width: 991px) {			
+		top: 30px;
+    	left: -40px;				
+	}
+}
