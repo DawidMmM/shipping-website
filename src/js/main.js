@@ -1,6 +1,6 @@
 import "../css/main.scss";
 
-import bootstrap from "bootstrap/js/src/carousel";
+import bootstrap from "bootstrap/js/dist/carousel";
 
 class ToggleMenu {
 	constructor( container ) {
@@ -22,7 +22,8 @@ class ToggleMenu {
 	}
 
 	show() {
-		this.menu.classList.add( 'menu_is-open', 'menu_collapsing' );
+		this.menu.classList.add( 'menu_is-open' );
+		this.menu.classList.add( 'menu_collapsing' );
 		this.menu.style.height = this.menu.scrollHeight + 'px';                
 
 		setTimeout( function() { 
@@ -40,7 +41,8 @@ class ToggleMenu {
 		this.menu.style.height = '';
 
 		setTimeout( function() {       
-			this.menu.classList.remove( 'menu_is-open', 'menu_collapsing' );
+			this.menu.classList.remove( 'menu_is-open' );
+			this.menu.classList.remove( 'menu_collapsing' );
 		}.bind( this ), 400 );       
 	}
 
