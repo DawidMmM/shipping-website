@@ -1,11 +1,5 @@
 .youtube {
-	display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-
     &__text {
 		width: 100%;
-		font-size: $text-s;
-		text-transform: uppercase;
 	}
 }

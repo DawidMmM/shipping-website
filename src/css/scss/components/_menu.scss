@@ -2,14 +2,7 @@
 	margin: .4rem 0 0;
 	border-top: 1px solid $gainsboro;
 	display: none;
-	text-align: center;
-	list-style: none;	
-
-	@media (min-width: 768px) {
-		display: flex;
-		justify-content: flex-end;
-		border-top: none;
-	}	
+	list-style: none;			
 
 	&__item {
 		position: relative;
@@ -26,33 +19,41 @@
 
 	&__link {
 		padding: .5rem 0;
-		display: block;
-		color: $black;
-		opacity: .7;
-		text-transform: uppercase;
+		opacity: .7;	
 
-		@media (min-width: 768px) {		
-			padding: .5rem .5rem .2rem;
-		}
-
-		&:hover {
-			color: $black;
+		&:hover {			
 			opacity: 1;
 			text-decoration: none;			
 		}
 	}
 
-	&_is-open {
-		display: block;
-
-		@media( min-width: 768px ) {
-			display: flex;
-		}
-	}	
-
 	&_collapsing {
 		height: 0;
 		overflow: hidden;
 		transition: height .4s;
+	}
+
+	&__link, &_is-open {
+		display: block;		
+	}	
+
+	&__link, &__link:hover {
+		color: $black;
+	}
+}
+
+@media (min-width: 768px) {
+	.menu {
+		display: flex;
+		justify-content: flex-end;
+		border-top: none;
+
+		&__link {
+			padding: .5rem .5rem .2rem;
+		}
+
+		&_is-open {
+			display: flex;
+		}
 	}
 }

@@ -7,6 +7,10 @@
 @import "~bootstrap/scss/forms";
 @import "~bootstrap/scss/carousel";
 
+/*Variables*/
+
+@import "scss/variables/*";
+
 /*Utils*/
 
 @import "scss/utils/*";
@@ -22,11 +26,3 @@
 /*Layout*/
 
 @import "scss/layout/*";
-
-/*Pages*/
-
-@import "scss/pages/for-who";
-@import "scss/pages/download";
-@import "scss/pages/partners";
-@import "scss/pages/trusted-us";
-

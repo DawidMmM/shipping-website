@@ -1,10 +1,6 @@
 .no-js {	
 	body {
-		padding-top: 190px;
-
-		@media( min-width: 578px ) {
-			padding-top: 130px;		
-		}
+		padding-top: 190px;		
 	}	
 	
 	.hamburger {
@@ -14,12 +10,7 @@
 	.menu {
 		display: flex;
     	flex-wrap: wrap;
-    	justify-content: flex-end;
-
-    	@media( max-width: 768px ) {	
-			margin-top: 4rem;	
-			justify-content: center;
-		}
+    	justify-content: flex-end;    	
 
 		&__link {
 			padding: .6rem;
@@ -30,18 +21,31 @@
 		height: 410px;
 		overflow: scroll;    	
 
-		.carousel-item {
+		&-item {
 			height: auto;
 			float: none;
 			display: flex;
-		}	
+		}		
 
-		&-item__description, &-item__img {
-			height: 290px;			
+		&-indicators, &-control-prev, &-control-next {
+			display: none;
 		}
 	}		
+}
 
-	.carousel-indicators, .carousel-control-prev, .carousel-control-next {
-		display: none;
-	}	
+@media( min-width: 578px ) {
+	.no-js {
+		body {		
+			padding-top: 130px;		
+		}	
+	}
+}
+
+@media( max-width: 768px ) {
+	.no-js {
+		.menu {
+			margin-top: 4rem;	
+			justify-content: center;			
+		}	
+	}
 }
