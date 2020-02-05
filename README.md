@@ -1,4 +1,4 @@
-# Shipping website
+# Shipping Website
 
 Technologies and tools I've used with this project:
 
